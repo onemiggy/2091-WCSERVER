@@ -1,8 +1,8 @@
-function add(a, b) {
+function sum(a, b) {
   return a + b;
 }
 
-function subtract(a, b) {
+function minus(a, b) {
   return a - b;
 }
 
@@ -14,4 +14,4 @@ function divide(a, b) {
   return a / b;
 }
 
-module.exports = { add, subtract, multiply, divide };
+module.exports = { sum, minus, multiply, divide };
