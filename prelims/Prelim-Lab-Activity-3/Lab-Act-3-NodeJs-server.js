@@ -11,9 +11,11 @@ var server = http.createServer(function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/html' });
     res.write('<html><body><p>This is about page Page.</p></body></html>');
     res.end();
-  } else if (req.url == '/admin') {
+  } else if (req.url == '/contact') {
     res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.write('<html><body><p>This is The Student Page.</p></body></html>');
+    res.write(
+      '<html><body><p>This is The Student Page.</p><h1>Hello Enriquez Juan Miguel, This activty will teach you on how to create a simple server and local moduels in Nodejs.</h1></body></html>'
+    );
     res.end();
   } else res.end('Invalid Request!');
 });
