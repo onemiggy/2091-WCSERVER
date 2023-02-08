@@ -14,7 +14,7 @@ var server = http.createServer(function (req, res) {
   } else if (req.url == '/contact') {
     res.writeHead(200, { 'Content-Type': 'text/html' });
     res.write(
-      '<html><body><p>This is The Student Page.</p><h1>Hello Enriquez Juan Miguel, This activty will teach you on how to create a simple server and local moduels in Nodejs.</h1></body></html>'
+      '<html><body><p>This is The Student Page.</p><p>Hello Enriquez Juan Miguel, This activty will teach you on how to create a simple server and local moduels in Nodejs.</p></body></html>'
     );
     res.end();
   } else res.end('Invalid Request!');
